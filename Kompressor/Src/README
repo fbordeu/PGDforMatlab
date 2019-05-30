@@ -1,0 +1,24 @@
+Routine to recompact a solution stored in separated representation (canonic)
+
+To use :
+
+put your field in a binary file using the matlab function 
+
+  DumpFF('myfile.bin',FF)
+
+execute the Recompact app, 
+
+  Recompact myfile.bin
+
+  the output is written in a file named out_myfile.bin
+
+the read the file using the ReadFF.m routine
+
+  FFr = ReadFF('out_myfile.bin')
+
+
+
+ This file is subject to the terms and conditions defined in
+ file 'LICENSE.txt', which is part of this source code package.
+
+ Principal developer : Felipe Bordeu (Felipe.Bordeu@ec-nantes.fr)
